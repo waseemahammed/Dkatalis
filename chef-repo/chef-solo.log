@@ -1,0 +1,334 @@
+# Logfile created on 2021-04-28 21:54:02 +0530 by logger.rb/66358
+[2021-04-28T21:54:04+05:30] INFO: Started Chef Infra Zero at chefzero://localhost:1 with repository at C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo, C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/cookbooks
+  One version per cookbook
+
+[2021-04-28T21:54:04+05:30] INFO: *** Chef Infra Client 15.14.0 ***
+[2021-04-28T21:54:04+05:30] INFO: Platform: x64-mingw32
+[2021-04-28T21:54:04+05:30] INFO: Chef-client pid: 5268
+[2021-04-28T21:54:21+05:30] INFO: Setting the run_list to ["recipe[elasticsearch-server]"] from CLI options
+[2021-04-28T21:54:21+05:30] INFO: Run List is [recipe[elasticsearch-server]]
+[2021-04-28T21:54:21+05:30] INFO: Run List expands to [elasticsearch-server]
+[2021-04-28T21:54:21+05:30] INFO: Starting Chef Infra Client Run for TAVLAPT258.internal.tavisca.com
+[2021-04-28T21:54:21+05:30] INFO: Running start handlers
+[2021-04-28T21:54:21+05:30] INFO: Start handlers complete.
+[2021-04-28T21:54:22+05:30] WARN: Cookbook 'nodes' is empty or entirely chefignored at C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/cookbooks/nodes
+[2021-04-28T21:54:22+05:30] ERROR: Could not read C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/cookbooks/elasticsearch-server into a Chef object: Cookbook depends on itself in cookbook elasticsearch, please remove the this unnecessary self-dependency
+[2021-04-28T21:54:22+05:30] ERROR: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/cookbook/metadata.rb:283:in `depends'
+C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/cookbooks/elasticsearch-server/metadata.rb:11:in `from_file'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/mixin/from_file.rb:34:in `instance_eval'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/mixin/from_file.rb:34:in `from_file'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/cookbook/cookbook_version_loader.rb:244:in `apply_ruby_metadata'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/cookbook/cookbook_version_loader.rb:124:in `block in metadata'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/cookbook/cookbook_version_loader.rb:121:in `each'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/cookbook/cookbook_version_loader.rb:121:in `metadata'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/cookbook/cookbook_version_loader.rb:68:in `load!'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/chef_fs/file_system/repository/chef_repository_file_system_cookbook_dir.rb:146:in `cookbook_version'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/chef_fs/file_system/repository/chef_repository_file_system_cookbook_dir.rb:91:in `chef_object'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/chef_fs/chef_fs_data_store.rb:315:in `block in get'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/chef_fs/chef_fs_data_store.rb:793:in `with_entry'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/chef_fs/chef_fs_data_store.rb:311:in `get'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/data_store/v1_to_v2_adapter.rb:50:in `block in get'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/data_store/v1_to_v2_adapter.rb:122:in `fix_exceptions'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/data_store/v1_to_v2_adapter.rb:43:in `get'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/rest_base.rb:82:in `get_data'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:79:in `block in depsolve'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:73:in `each'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:73:in `depsolve'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:39:in `post'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/rest_base.rb:58:in `call'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/rest_router.rb:24:in `call'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/server.rb:670:in `block in app'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/server.rb:338:in `handle_socketless_request'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/socketless_server_map.rb:89:in `request'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-zero-15.0.3/lib/chef_zero/socketless_server_map.rb:34:in `request'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/http/socketless_chef_zero_client.rb:155:in `request'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/http.rb:376:in `block in send_http_request'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/http.rb:415:in `block in retrying_http_errors'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/http.rb:413:in `loop'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/http.rb:413:in `retrying_http_errors'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/http.rb:369:in `send_http_request'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/http.rb:150:in `request'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/http.rb:132:in `post'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/policy_builder/expand_node_object.rb:186:in `sync_cookbooks'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/policy_builder/expand_node_object.rb:89:in `setup_run_context'
+C:/opscode/chefdk/embedded/lib/ruby/2.6.0/forwardable.rb:230:in `setup_run_context'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/client.rb:496:in `setup_run_context'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/client.rb:284:in `run'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/application.rb:320:in `run_with_graceful_exit_option'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/application.rb:296:in `block in run_chef_client'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/local_mode.rb:42:in `with_server_connectivity'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/application.rb:279:in `run_chef_client'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/application/base.rb:330:in `run_application'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/application.rb:68:in `run'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-15.14.0-universal-mingw32/lib/chef/application/solo.rb:59:in `run'
+C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/chef-bin-15.14.0/bin/chef-solo:24:in `<top (required)>'
+C:/opscode/chefdk/bin/chef-solo:358:in `load'
+C:/opscode/chefdk/bin/chef-solo:358:in `<main>'
+[2021-04-28T21:54:22+05:30] INFO: HTTP Request Returned 500 Internal Server Error: error
+[2021-04-28T21:54:22+05:30] ERROR: Running exception handlers
+[2021-04-28T21:54:22+05:30] ERROR: Exception handlers complete
+[2021-04-28T21:54:22+05:30] FATAL: Stacktrace dumped to C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/.chef/cache/chef-stacktrace.out
+[2021-04-28T21:54:22+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2021-04-28T21:54:22+05:30] FATAL: Net::HTTPFatalError: 500 "Internal Server Error"
+[2021-04-28T21:55:38+05:30] INFO: Started Chef Infra Zero at chefzero://localhost:1 with repository at C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo, C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/cookbooks
+  One version per cookbook
+
+[2021-04-28T21:55:38+05:30] INFO: *** Chef Infra Client 15.14.0 ***
+[2021-04-28T21:55:38+05:30] INFO: Platform: x64-mingw32
+[2021-04-28T21:55:38+05:30] INFO: Chef-client pid: 29308
+[2021-04-28T21:55:49+05:30] INFO: Setting the run_list to ["recipe[elasticsearch-server]"] from CLI options
+[2021-04-28T21:55:49+05:30] INFO: Run List is [recipe[elasticsearch-server]]
+[2021-04-28T21:55:49+05:30] INFO: Run List expands to [elasticsearch-server]
+[2021-04-28T21:55:49+05:30] INFO: Starting Chef Infra Client Run for TAVLAPT258.internal.tavisca.com
+[2021-04-28T21:55:49+05:30] INFO: Running start handlers
+[2021-04-28T21:55:49+05:30] INFO: Start handlers complete.
+[2021-04-28T21:55:49+05:30] WARN: Cookbook 'nodes' is empty or entirely chefignored at C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/cookbooks/nodes
+[2021-04-28T21:55:52+05:30] INFO: Loading cookbooks [elasticsearch@0.1.0, ark@5.1.0, chef-sugar@5.1.12, yum@6.1.0, apt@7.4.0, seven_zip@3.2.0, windows@7.0.2]
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/elasticsearch/chefignore in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/elasticsearch/metadata.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/elasticsearch/LICENSE in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/elasticsearch/README.md in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/elasticsearch/recipes/default.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/files/default/foo.tar.gz in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/chefignore in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/CHANGELOG.md in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/elasticsearch/recipes/user.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/attributes/default.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/files/default/foo.tbz in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/files/default/foo.tgz in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/files/default/foo.txz in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/files/default/foo.zip in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/files/default/foo_sub.tar.gz in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/kitchen.dokken.yml in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/files/default/foo_sub.zip in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/kitchen.exec.yml in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/libraries/default.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/libraries/general_owner.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/libraries/platform_specific_builders.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/libraries/resource_defaults.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/libraries/sevenzip_command_builder.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/libraries/resource_deprecations.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/libraries/tar_command_builder.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/libraries/unzip_command_builder.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/libraries/windows_owner.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/LICENSE in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/metadata.json in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/metadata.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/recipes/default.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/README.md in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/templates/add_to_path.sh.erb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/ark/resources/default.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/chef-sugar-ng.gemspec in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/chef-sugar.gemspec in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/DEPRECATION_TODO.md in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/architecture.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/cloud.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/constraints.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/constraints_dsl.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/core_extensions/array.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/data_bag.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/core_extensions/string.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/core_extensions/object.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/core_extensions.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/deprecation.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/docker.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/filters.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/init.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/ip.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/kernel.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/kitchen.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/platform.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/node.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/ruby.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/platform_family.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/run_context.rb in the cache.
+[2021-04-28T21:55:52+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/shell.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/vagrant.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/version.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar/virtualization.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/lib/chef/sugar.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/libraries/chef-sugar.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/LICENSE in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/metadata.json in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/metadata.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/README.md in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/recipes/default.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/chef-sugar/VERSION in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/attributes/main.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/kitchen.dokken.yml in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/CHANGELOG.md in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/metadata.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/metadata.json in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/LICENSE in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/chefignore in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/README.md in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/recipes/default.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/recipes/dnf_yum_compat.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/templates/main.erb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/yum/resources/globalconfig.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/attributes/default.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/chefignore in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/files/15update-stamp in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/CHANGELOG.md in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/files/apt-proxy-v2.conf in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/kitchen.dokken.yml in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/metadata.json in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/LICENSE in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/metadata.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/libraries/helpers.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/README.md in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/recipes/default.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/recipes/cacher-ng.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/recipes/cacher-client.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/templates/01proxy.erb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/recipes/unattended-upgrades.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/templates/10recommends.erb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/templates/10dpkg-options.erb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/templates/20auto-upgrades.erb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/attributes/default.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/templates/unattended-upgrades.seed.erb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/templates/acng.conf.erb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/apt/templates/50unattended-upgrades.erb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/CHANGELOG.md in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/chefignore in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/kitchen.exec.yml in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/metadata.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/LICENSE in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/metadata.json in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/providers/archive.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/rakefile.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/recipes/default.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/resources/archive.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/README.md in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/seven_zip/resources/tool.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/libraries/version_helper.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/libraries/windows_helper.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/libraries/version.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/libraries/registry_helper.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/metadata.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/libraries/windows_privileged.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/metadata.json in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/libraries/wmi_helper.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/providers/dns.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/libraries/powershell_helper.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/recipes/default.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/resources/certificate_binding.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/resources/dns.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/README.md in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/resources/http_acl.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/resources/user_privilege.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/resources/zipfile.rb in the cache.
+[2021-04-28T21:55:53+05:30] INFO: Storing updated cookbooks/windows/resources/schannel.rb in the cache.
+[2021-04-28T21:56:05+05:30] INFO: Fetching gem metadata from https://www.rubygems.org/.
+Resolving dependencies...
+Using bundler 1.17.2
+Using chef-sugar 5.1.12
+Bundle complete! 1 Gemfile dependency, 2 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2021-04-28T21:56:05+05:30] ERROR: Running exception handlers
+[2021-04-28T21:56:05+05:30] ERROR: Exception handlers complete
+[2021-04-28T21:56:05+05:30] FATAL: Stacktrace dumped to C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/.chef/cache/chef-stacktrace.out
+[2021-04-28T21:56:05+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2021-04-28T21:56:05+05:30] FATAL: NoMethodError: undefined method `elasticsearch_user' for cookbook: elasticsearch, recipe: user :Chef::Recipe
+[2021-04-28T21:57:00+05:30] INFO: Started Chef Infra Zero at chefzero://localhost:1 with repository at C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo, C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/cookbooks
+  One version per cookbook
+
+[2021-04-28T21:57:00+05:30] INFO: *** Chef Infra Client 15.14.0 ***
+[2021-04-28T21:57:00+05:30] INFO: Platform: x64-mingw32
+[2021-04-28T21:57:00+05:30] INFO: Chef-client pid: 28904
+[2021-04-28T21:57:12+05:30] INFO: Setting the run_list to ["recipe[elasticsearch-server]"] from CLI options
+[2021-04-28T21:57:12+05:30] INFO: Run List is [recipe[elasticsearch-server]]
+[2021-04-28T21:57:12+05:30] INFO: Run List expands to [elasticsearch-server]
+[2021-04-28T21:57:12+05:30] INFO: Starting Chef Infra Client Run for TAVLAPT258.internal.tavisca.com
+[2021-04-28T21:57:12+05:30] INFO: Running start handlers
+[2021-04-28T21:57:12+05:30] INFO: Start handlers complete.
+[2021-04-28T21:57:12+05:30] WARN: Cookbook 'nodes' is empty or entirely chefignored at C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/cookbooks/nodes
+[2021-04-28T21:57:13+05:30] INFO: Loading cookbooks [elasticsearch-server@0.1.0, elasticsearch@4.3.0, ark@5.1.0, chef-sugar@5.1.12, yum@6.1.0, apt@7.4.0, seven_zip@3.2.0, windows@7.0.2]
+[2021-04-28T21:57:14+05:30] INFO: Removing cookbooks/elasticsearch/recipes/user.rb from the cache; its is no longer in the cookbook manifest.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch-server/chefignore in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch-server/README.md in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch-server/recipes/default.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch-server/metadata.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch-server/LICENSE in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch-server/recipes/user.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/matchers.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/attributes/default.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/provider_configure.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/helpers.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/provider_user.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/resource_configure.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/provider_install.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/provider_service.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/resource_install.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/resource_service.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/provider_plugin.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/resource_plugin.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/libraries/resource_user.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/metadata.json in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/amazon/initscript.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/debian/initscript.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/default/elasticsearch.in.sh.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/centos/initscript.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/default/elasticsearch.yml.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/metadata.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/default/jvm_options.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/README.md in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/recipes/default.rb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/default/log4j2.properties.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/default/sysctl.d-elasticsearch.conf.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/default/systemd_unit.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/default/tmpfiles.d-elasticsearch.conf.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/oracle/initscript.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/ubuntu/initscript.erb in the cache.
+[2021-04-28T21:57:14+05:30] INFO: Storing updated cookbooks/elasticsearch/templates/redhat/initscript.erb in the cache.
+[2021-04-28T21:57:22+05:30] INFO: Fetching gem metadata from https://www.rubygems.org/.
+Resolving dependencies...
+Using bundler 1.17.2
+Using chef-sugar 5.1.12
+Bundle complete! 1 Gemfile dependency, 2 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2021-04-28T21:57:23+05:30] INFO: Processing elasticsearch_user[admin] action create (elasticsearch-server::user line 9)
+[2021-04-28T21:57:23+05:30] INFO: Processing group[elasticsearch] action create (C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/.chef/cache/cookbooks/elasticsearch/libraries/provider_user.rb line 12)
+[2021-04-28T21:57:23+05:30] INFO: group[elasticsearch] created
+[2021-04-28T21:57:23+05:30] INFO: Processing windows_user[admin] action create (C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/.chef/cache/cookbooks/elasticsearch/libraries/provider_user.rb line 20)
+[2021-04-28T21:57:23+05:30] WARN: The 'gid' (or 'group') property is not implemented on the Windows platform. Please use the `members` property of the  'group' resource to assign a user to a group.
+[2021-04-28T21:57:23+05:30] INFO: Running queued delayed notifications before re-raising exception
+[2021-04-28T21:57:23+05:30] ERROR: Running exception handlers
+[2021-04-28T21:57:23+05:30] ERROR: Exception handlers complete
+[2021-04-28T21:57:23+05:30] FATAL: Stacktrace dumped to C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/.chef/cache/chef-stacktrace.out
+[2021-04-28T21:57:23+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2021-04-28T21:57:23+05:30] FATAL: Chef::Exceptions::Win32APIError: elasticsearch_user[admin] (elasticsearch-server::user line 9) had an error: Chef::Exceptions::Win32APIError: windows_user[admin] (C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/.chef/cache/cookbooks/elasticsearch/libraries/provider_user.rb line 20) had an error: Chef::Exceptions::Win32APIError: The password does not meet the password policy requirements. Check the minimum password length, password complexity and password history requirements.
+---- Begin Win32 API output ----
+System Error Code: 2245
+System Error Message: The password does not meet the password policy requirements. Check the minimum password length, password complexity and password history requirements.
+---- End Win32 API output ----
+
+[2021-04-28T21:58:52+05:30] INFO: Started Chef Infra Zero at chefzero://localhost:1 with repository at C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo, C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/cookbooks
+  One version per cookbook
+
+[2021-04-28T21:58:52+05:30] INFO: *** Chef Infra Client 15.14.0 ***
+[2021-04-28T21:58:52+05:30] INFO: Platform: x64-mingw32
+[2021-04-28T21:58:52+05:30] INFO: Chef-client pid: 25936
+[2021-04-28T21:59:04+05:30] INFO: Setting the run_list to ["recipe[elasticsearch-server]"] from CLI options
+[2021-04-28T21:59:04+05:30] INFO: Run List is [recipe[elasticsearch-server]]
+[2021-04-28T21:59:04+05:30] INFO: Run List expands to [elasticsearch-server]
+[2021-04-28T21:59:04+05:30] INFO: Starting Chef Infra Client Run for TAVLAPT258.internal.tavisca.com
+[2021-04-28T21:59:04+05:30] INFO: Running start handlers
+[2021-04-28T21:59:04+05:30] INFO: Start handlers complete.
+[2021-04-28T21:59:04+05:30] WARN: Cookbook 'nodes' is empty or entirely chefignored at C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/cookbooks/nodes
+[2021-04-28T21:59:05+05:30] INFO: Loading cookbooks [elasticsearch-server@0.1.0, elasticsearch@4.3.0, ark@5.1.0, chef-sugar@5.1.12, yum@6.1.0, apt@7.4.0, seven_zip@3.2.0, windows@7.0.2]
+[2021-04-28T21:59:06+05:30] INFO: Storing updated cookbooks/elasticsearch-server/recipes/user.rb in the cache.
+[2021-04-28T21:59:14+05:30] INFO: Fetching gem metadata from https://www.rubygems.org/.
+Resolving dependencies...
+Using bundler 1.17.2
+Using chef-sugar 5.1.12
+Bundle complete! 1 Gemfile dependency, 2 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+[2021-04-28T21:59:15+05:30] ERROR: Running exception handlers
+[2021-04-28T21:59:15+05:30] ERROR: Exception handlers complete
+[2021-04-28T21:59:15+05:30] FATAL: Stacktrace dumped to C:/Users/wahammed/Documents/OldPC-D Drive/GCE/SCM/Poc/Elasticsearch/chef-repo/.chef/cache/chef-stacktrace.out
+[2021-04-28T21:59:15+05:30] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2021-04-28T21:59:15+05:30] FATAL: NoMethodError: undefined method `password' for ElasticsearchCookbook::UserResource

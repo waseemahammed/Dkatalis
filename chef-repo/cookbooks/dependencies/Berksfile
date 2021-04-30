@@ -1,0 +1,6 @@
+source "https://supermarket.chef.io"
+
+cookbook 'ark', '>= 0.0.0'
+cookbook 'chef-sugar', '>= 0.0.0'
+cookbook 'yum', '>= 0.0.0'
+cookbook 'apt', '>= 0.0.0'

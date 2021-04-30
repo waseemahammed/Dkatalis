@@ -1,0 +1,15 @@
+name 'elasticsearch-server'
+maintainer 'Waseem Ahammed'
+maintainer_email 'waseemahammed96@gmail.com'
+license 'All Rights Reserved'
+description 'Installs/Configures elasticsearch'
+long_description 'Installs/Configures elasticsearch'
+version '0.1.0'
+chef_version '>= 14.0'
+
+
+depends 'elasticsearch', '~> 4.3.0'
+depends 'ark', '>= 0.0.0'
+depends 'chef-sugar', '>= 0.0.0'
+depends 'yum', '>= 0.0.0'
+depends 'apt', '>= 0.0.0'
